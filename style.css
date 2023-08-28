@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+    --dark-colour--: #2E333A;
+    --blue-grey--: #B2C2CB;
+    --secondary-blue--: #0ED2F6;
+    --secondary-blue-light--: #72E4F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-color: var(--dark-colour--);
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* navbar section css */
+
+.nav-wraper {
+    height: auto;
+    width: 100%;
+}
+
+.nav {
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    height: 60.81px;
+    background: cover no-repeat;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav ul li a {
+    color: var(--blue-grey--);
+}
+
+.nav .sign-in {
+    margin-right: 28px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000, -6.223021507263184px -6.223021507263184px 18.669065475463867px 0px #3B4451;
+}
+
+.nav .newtm-btn {
+    padding: 10px 12px;
+    border-radius: 12px;
+    box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000, -6.223021507263184px -6.223021507263184px 18.669065475463867px 0px #3B4451;
+}
+
+.nav svg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* navbar section css */
