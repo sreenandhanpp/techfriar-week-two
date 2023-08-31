@@ -1,3 +1,3 @@
-Techfriar internshipt week two assignment
+Techfriar internship week two assignment
 
 figma design into website
