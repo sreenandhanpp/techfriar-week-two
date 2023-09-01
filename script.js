@@ -32,3 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
   
 });
 
+// select tag action
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    
+    var element = document.getElementById( "role" );
+    element.setAttribute('display','none')
+  
+});

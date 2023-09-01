@@ -16,6 +16,7 @@
     list-style: none;
     box-sizing: border-box;
     overflow-x: hidden;
+
 }
 
 
@@ -28,7 +29,6 @@
     background-color: var(--dark-colour--);
     z-index: 1000;
     position: fixed;
-
 }
 
 .nav {
@@ -298,13 +298,13 @@ svg,
 }
 
 form {
-    height: 770px;
+    height: auto;
     overflow-x: visible !important;
 }
 
 .form-wrapper {
     overflow-x: visible !important;
-    height: 1000px;
+    height: 635px;
     margin-top: 26px;
     padding: 50px 35px;
     border-radius: 25px;
@@ -340,32 +340,14 @@ form {
 }
 
 .form-div {
-    margin-top: 35px;
+    margin-top: 25px;
     width: 390px;
 
 }
 
-.role {
-    outline: none;
-    border: 0;
-    display: flex;
-    width: 350px;
-    padding: 12px 20px;
-    align-items: center;
-    justify-content: center;
-    height: 47px;
-    margin-top: 8px;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background: var(--dark-colour, #2E333A);
-    box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000, -6.223021507263184px -6.223021507263184px 18.669065475463867px 0px #3B4451;
-}
-
 .form-div input {
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     outline: none;
     border: 0;
     display: flex;
@@ -382,44 +364,10 @@ form {
 .eye {
     position: absolute;
     color: var(--secondary-blue--);
-    bottom: 567px;
-    left: 620px;
+    bottom: 252px;
+    left: 820px;
 }
 
-.eye-2 {
-    position: absolute;
-    color: var(--secondary-blue--);
-    bottom: 567px;
-    right: 330px;
-}
-
-.summary {
-    margin-top: 35px;
-    margin-left: 25px;
-}
-
-.summary .label {
-    color: var(--secondary-blue-light--);
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 500;
-
-}
-
-.summary input {
-    display: flex;
-    margin-top: 8px;
-    margin-bottom: 16px;
-    height: 200px;
-    border: 0;
-    padding: 15px 20px;
-    align-items: flex-start;
-    gap: 8px;
-    width: 735px;
-    border-radius: 10px;
-    background: var(--dark-colour--);
-    box-shadow: 3.7338130474090576px 3.7338130474090576px 6.223021507263184px 0px #000 inset, -6.223021507263184px -6.223021507263184px 6.223021507263184px 0px #3B4451 inset;
-}
 
 .form-link-1 {
     color: var(--secondary-blue--);
@@ -441,7 +389,7 @@ form {
     margin-top: 30px;
     margin-bottom: 50px;
     text-align: center;
-    width: 295px;
+    width: 172px;
     font-size: 27px;
     font-style: normal;
     font-weight: 600;
@@ -466,17 +414,4 @@ form {
     color: var(--blue-grey--);
 }
 
-.form-wrapper select {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    color: var(--blue-grey--);
-    appearance: none;
-}
-
-.select-arrow{
-    position: absolute;
-    top:428px;
-    right: 337px;
-}
 /* form section css */
