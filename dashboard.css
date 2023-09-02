@@ -10,9 +10,10 @@
     --blue-Grey-light--: #E7ECEF;
     --secondary-blue-light-2: #b8f1fc;
     --blue-grey-dark: #668599;
-    
-  
+    zoom: 67%;
+
 }
+
 
 * {
     margin: 0;
@@ -89,7 +90,7 @@
     height: 15px;
     width: 15.36px;
     top: 49px;
-    right: 900px;
+    right: 883px;
 }
 
 .nav input::placeholder {
@@ -137,8 +138,8 @@
 /* side menu section css */
 .side-bar {
     margin: 50px 0px;
-    margin-right: 186px;
-    height: auto;
+    margin-right: 278px;
+    height: 1174px;
     width: auto;
     border-radius: 0px 25px 25px 0px;
     box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000, -6.223021507263184px -6.223021507263184px 18.669065475463867px 0px #3B4451;
@@ -154,15 +155,23 @@
     gap: 50px;
 }
 
-.side-bar li a {
-    height: 76px;
-    width: 76px;
+.active-icon {
+    padding: 18px;
+    border-radius: 12px;
+    background-color: var(--Dark-colour, #2E333A);
+    box-shadow: 3.73381px 3.73381px 6.22302px 0px #000 inset, -6.22302px -6.22302px 6.22302px 0px #3B4451 inset !important;
 }
 
+
+.side-bar li:active{
+
+}
 .side-bar li {
     padding: 18px;
     border-radius: 12px;
     box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000, -6.223021507263184px -6.223021507263184px 18.669065475463867px 0px #3B4451;
+    transition: background-color 0.4s,
+    boxshadow 0.4s;
 }
 
 .side-bar svg {
@@ -375,7 +384,9 @@
     display: flex;
     flex-direction: column;
     background: none;
+    
 }
+
 
 .chart-line {
     display: flex;
@@ -409,16 +420,18 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-radius:15px;
+    border-radius: 15px;
     background-color: var(--dark-colour);
-    box-shadow: -5px -5px 5px #3b4451 inset, 3px 3px 5px #000 inset;;
+    box-shadow: -5px -5px 5px #3b4451 inset, 3px 3px 5px #000 inset;
+    ;
     height: 400px;
 }
 
 .group-item {
     top: 111.74px;
     background-color: var(--blue-grey-dark);
-    box-shadow:  1.4312949180603027px 1.4312949180603027px 2.86px rgba(136, 160, 183, 0.35);;
+    box-shadow: 1.4312949180603027px 1.4312949180603027px 2.86px rgba(136, 160, 183, 0.35);
+    ;
     width: 75px;
     height: 288.26px;
 }
@@ -433,23 +446,23 @@
 }
 
 
-.group-item2{
+.group-item2 {
     top: 204.74px;
     background-color: var(--blue-grey-dark);
-    box-shadow:  1.4312949180603027px 1.4312949180603027px 2.86px rgba(136, 160, 183, 0.35);
+    box-shadow: 1.4312949180603027px 1.4312949180603027px 2.86px rgba(136, 160, 183, 0.35);
     width: 75px;
     height: 196.26px;
 }
 
-.group-item3{
+.group-item3 {
     top: 53.74px;
     background-color: var(--blue-grey-dark);
-    box-shadow:  1.4312949180603027px 1.4312949180603027px 2.86px rgba(136, 160, 183, 0.35);
+    box-shadow: 1.4312949180603027px 1.4312949180603027px 2.86px rgba(136, 160, 183, 0.35);
     width: 75px;
     height: 346.26px;
 }
 
-.group-item4{
+.group-item4 {
     top: 111.74px;
     background-color: var(--blue-grey-dark);
     box-shadow: 1.4312949180603027px 1.4312949180603027px 2.86px rgba(136, 160, 183, 0.35);
@@ -457,27 +470,28 @@
     height: 288.26px;
 }
 
-.group-item5{
+.group-item5 {
     top: 71.74px;
     background-color: var(--blue-grey-dark);
-    box-shadow:  1.4312949180603027px 1.4312949180603027px 2.86px rgba(136, 160, 183, 0.35);
+    box-shadow: 1.4312949180603027px 1.4312949180603027px 2.86px rgba(136, 160, 183, 0.35);
     width: 75px;
     height: 328.26px;
 }
 
-.group-item6{
+.group-item6 {
     top: 27.74px;
     background-color: var(--secondary-blue--);
-    box-shadow:  1.4312949180603027px 1.4312949180603027px 2.86px rgba(136, 160, 183, 0.35);
+    box-shadow: 1.4312949180603027px 1.4312949180603027px 2.86px rgba(136, 160, 183, 0.35);
     width: 75px;
     height: 372.26px;
 }
 
 
-.group-parent{
-    gap: 50px!important;
+.group-parent {
+    gap: 50px !important;
     margin-left: 25px;
 }
+
 .chart1,
 .group-parent {
     display: flex;
@@ -502,7 +516,7 @@
     display: flex;
     align-items: flex-start;
     background: none;
-    
+
 }
 
 .wrapper {
@@ -515,7 +529,7 @@
 .day {
     justify-content: flex-start;
 
-    
+
 }
 
 .day {
@@ -659,7 +673,7 @@
     border-radius: 12px;
     background: var(--dark-colour);
     box-shadow: 6.22302px 6.22302px 18.66907px 0px #000, -6.22302px -6.22302px 18.66907px 0px #3B4451;
-    border: 1px solid #3C4147;
+
     display: flex;
     align-items: center;
     justify-content: center;

@@ -166,6 +166,7 @@
     top: 535px;
     z-index: 13;
 }
+
 /* gradient css */
 
 /* background images */
@@ -437,6 +438,7 @@ form {
     margin-top: 0px;
     overflow-x: visible !important;
 }
+
 .form-link-2 {
     margin-top: 30px;
     margin-bottom: 50px;
@@ -474,9 +476,17 @@ form {
     appearance: none;
 }
 
-.select-arrow{
+.option-div {
+   background-color: red;
+    border-radius: 10px;
+    background: var(--Dark-colour, #2E333A);
+    box-shadow: 6.22302px 6.22302px 18.66907px 0px #000, -6.22302px -6.22302px 18.66907px 0px #3B4451 !important;
+}
+
+.select-arrow {
     position: absolute;
-    top:428px;
+    top: 428px;
     right: 337px;
 }
+
 /* form section css */
