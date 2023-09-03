@@ -384,14 +384,14 @@ form {
     position: absolute;
     color: var(--secondary-blue--);
     bottom: 567px;
-    left: 620px;
+    left: 614px;
 }
 
 .eye-2 {
     position: absolute;
     color: var(--secondary-blue--);
     bottom: 567px;
-    right: 330px;
+    right: 320px;
 }
 
 .summary {
@@ -474,12 +474,19 @@ form {
     font-weight: 500;
     color: var(--blue-grey--);
     appearance: none;
+
+
 }
 
-.option-div {
-   background-color: red;
-    border-radius: 10px;
-    background: var(--Dark-colour, #2E333A);
+.role > option{
+    
+
+
+
+    outline: none !important;
+    border: none;
+    border-radius: 10px !important;
+    background: var(--Dark-colour, #2E333A) !important;
     box-shadow: 6.22302px 6.22302px 18.66907px 0px #000, -6.22302px -6.22302px 18.66907px 0px #3B4451 !important;
 }
 

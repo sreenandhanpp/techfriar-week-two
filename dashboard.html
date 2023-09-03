@@ -6,8 +6,8 @@
     <title>TechFriar</title>
 
 </head>
-
-<link rel="stylesheet" href="dashboard.css">
+<script src="script.js"></script>
+<link rel="stylesheet" href="./styelsheet/dashboard.css">
 <body>
     <header>
         <div class="nav-wraper">
@@ -194,11 +194,11 @@
                                 <div class="chart-parent">
                                   <div class="chart1">
                                     <div class="parent">
-                                      <div class="today-so-far">40</div>
-                                      <div class="today-so-far">30</div>
-                                      <div class="today-so-far">20</div>
-                                      <div class="today-so-far">10</div>
-                                      <div class="today-so-far">0</div>
+                                      <span class="today-so-far">40</span>
+                                      <span class="today-so-far">30</span>
+                                      <span class="today-so-far">20</span>
+                                      <span class="today-so-far">10</span>
+                                      <span class="today-so-far">0</span>
                                     </div>
                                     <div class="group-parent">
                                       <div class="group-div">
@@ -256,10 +256,10 @@
                 </div>
                 <div class="activity-wrapper">
                   
-                  <div class="activities">
+                  <div class="activities" id="activities">
                     <div class="heading-wrapper">
                       <h1 class="activity-heading"> People that did not make the quota yesterday - 75 SLP</h1>
-                      <a href="" class="view-all">View all</a>
+                      <a href="#bottom" id="view-all" onclick="viewAll()" class="view-all">View all</a>
                     </div>
                     <div class="activity-headings-wrapper">
                       <div class="activity-headings">
@@ -307,75 +307,77 @@
                         </div>
                       </div>
                     </div>
-                    <div class="home-section-wrapper">
-                      <div class="home-section">
-                        <div class="column-1">
-                          <div class="column-head-wrapper">
-                            <div class="icon-wrapper">
-
-                              <svg class="icon" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.94579 3.46289H2.98795C2.46072 3.46289 1.95507 3.67234 1.58226 4.04515C1.20944 4.41796 1 4.92361 1 5.45084V19.3665C1 19.8938 1.20944 20.3994 1.58226 20.7722C1.95507 21.145 2.46072 21.3545 2.98795 21.3545H16.9036C17.4309 21.3545 17.9365 21.145 18.3093 20.7722C18.6821 20.3994 18.8916 19.8938 18.8916 19.3665V12.4087" stroke="#B2C2CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M17.4006 1.97207C17.7961 1.57664 18.3324 1.35449 18.8916 1.35449C19.4508 1.35449 19.9871 1.57664 20.3826 1.97207C20.778 2.3675 21.0001 2.90382 21.0001 3.46304C21.0001 4.02226 20.778 4.55857 20.3826 4.954L10.9398 14.3968L6.96387 15.3908L7.95784 11.4149L17.4006 1.97207Z" stroke="#B2C2CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              </svg>
+                    <div class="display" id="display">
+                      <div class="home-section-wrapper section-display-1">
+                        <div class="home-section">
+                          <div class="column-1">
+                            <div class="column-head-wrapper">
+                              <div class="icon-wrapper">
+  
+                                <svg class="icon" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M9.94579 3.46289H2.98795C2.46072 3.46289 1.95507 3.67234 1.58226 4.04515C1.20944 4.41796 1 4.92361 1 5.45084V19.3665C1 19.8938 1.20944 20.3994 1.58226 20.7722C1.95507 21.145 2.46072 21.3545 2.98795 21.3545H16.9036C17.4309 21.3545 17.9365 21.145 18.3093 20.7722C18.6821 20.3994 18.8916 19.8938 18.8916 19.3665V12.4087" stroke="#B2C2CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M17.4006 1.97207C17.7961 1.57664 18.3324 1.35449 18.8916 1.35449C19.4508 1.35449 19.9871 1.57664 20.3826 1.97207C20.778 2.3675 21.0001 2.90382 21.0001 3.46304C21.0001 4.02226 20.778 4.55857 20.3826 4.954L10.9398 14.3968L6.96387 15.3908L7.95784 11.4149L17.4006 1.97207Z" stroke="#B2C2CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                              </div>
+                                <h4 class="column-head">Delvin</h4>
                             </div>
-                              <h4 class="column-head">Delvin</h4>
+                            <p class="column-pass">Axies: <span>3</span></p>
                           </div>
-                          <p class="column-pass">Axies: <span>3</span></p>
-                        </div>
-                        <div class="column-2">
-                          <h4 class="columns-sub-head"><span class="columns-head" > 10 SLP</span>~2.00 USD</h4>
-                          <h4 class="average-head">Average: <span class="columns-head-2">20 SLP</span> <span class="columns-sub-head">~0.500 USD</span> </h4>
-                          <h4 class="yesterday">Yesterday:<span class="yesterday-slp"> 5 SLP</span> <span class="yesterday-usd">~0.100 USD</span</h4>
-                        </div>
-                        <div class="column-3">
-                          <h4 class="columns-sub-head"><span class="columns-head"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.492 2.48291L15.4937 2.58289L15.5937 2.58115L17.8156 2.54237C18.9824 2.522 19.9542 3.46041 19.9745 4.62723L19.9939 5.73817C20.0425 8.51904 17.9882 10.8252 15.2985 11.2106L15.2413 11.2188L15.2198 11.2725C14.5611 12.9208 13.1097 14.1794 11.338 14.5703L11.2582 14.588L11.2596 14.6697L11.3197 18.1137L11.3214 18.2136L11.4214 18.2119L14.7543 18.1537C15.3126 18.144 15.7731 18.5887 15.7829 19.147C15.7926 19.7054 15.3479 20.1659 14.7895 20.1756L5.90201 20.3308C5.34368 20.3405 4.88316 19.8958 4.87341 19.3375C4.86366 18.7791 5.30839 18.3186 5.86672 18.3089L9.19955 18.2507L9.29953 18.2489L9.29779 18.149L9.23767 14.705L9.23624 14.6233L9.15582 14.6084C7.37159 14.2795 5.87712 13.0724 5.1613 11.4481L5.13798 11.3952L5.08051 11.389C2.37895 11.0977 0.245483 8.86459 0.196943 6.08373L0.177551 4.97278C0.157184 3.80597 1.0956 2.83421 2.26241 2.81385L4.4843 2.77506L4.58428 2.77332L4.58254 2.67333C4.56208 1.50144 5.4955 0.534853 6.6674 0.514397L13.333 0.398048C14.505 0.377592 15.4715 1.31101 15.492 2.48291ZM2.2977 4.83576L2.19772 4.83751L2.19947 4.93749L2.21886 6.04843C2.24484 7.53721 3.22872 8.77844 4.56301 9.23537L4.69788 9.28155L4.69539 9.13902L4.62132 4.89522L4.61957 4.79523L4.51959 4.79698L2.2977 4.83576ZM6.70269 2.53631L6.6027 2.53806L6.60445 2.63804L6.7208 9.30369C6.75376 11.192 8.32526 12.7095 10.2135 12.6766C12.1018 12.6436 13.6194 11.0721 13.5864 9.18385L13.4701 2.5182L13.4683 2.41822L13.3683 2.41996L6.70269 2.53631ZM15.6048 8.94859L15.6073 9.09113L15.7405 9.04026C17.058 8.53705 17.998 7.26224 17.972 5.77346L17.9526 4.66252L17.9509 4.56253L17.8509 4.56428L15.629 4.60306L15.529 4.60481L15.5308 4.70479L15.6048 8.94859Z" fill="#0ED2F6" stroke="#2E333A" stroke-width="0.2"/>
-                          </svg> 983</span>~1 SLP/win</h4>
-                          <h4 class="average-head">Manager: <span class="columns-head-2">10 SLP</span><span class="columns-sub-head">~0.18 USD</span> (100%)</h4>
-                        </div>
-                        <div class="column-4">
-                          <h4 class="columns-sub-head"><span class="columns-head">40 SLP</span>~0.40 USD</h4>
-                          <h4 class="average-head">Adventure SLP:<span class="columns-head-2"> 0/50</span></h4>
-                        </div>
-                        <div class="column-5">
-                          <h4 class="columns-sub-head"><span class="columns-head">34 SLP</span>~0.61 USD</h4>
-                          <h4 class="average-head">Total: <span class="columns-head-2">20 SLP</span><span class="columns-sub-head">~0.71 USD</span></h4>
+                          <div class="column-2">
+                            <h4 class="columns-sub-head"><span class="columns-head" > 10 SLP</span>~2.00 USD</h4>
+                            <h4 class="average-head">Average: <span class="columns-head-2">20 SLP</span> <span class="columns-sub-head">~0.500 USD</span> </h4>
+                            <h4 class="yesterday">Yesterday:<span class="yesterday-slp"> 5 SLP</span> <span class="yesterday-usd">~0.100 USD</span</h4>
+                          </div>
+                          <div class="column-3">
+                            <h4 class="columns-sub-head"><span class="columns-head"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M15.492 2.48291L15.4937 2.58289L15.5937 2.58115L17.8156 2.54237C18.9824 2.522 19.9542 3.46041 19.9745 4.62723L19.9939 5.73817C20.0425 8.51904 17.9882 10.8252 15.2985 11.2106L15.2413 11.2188L15.2198 11.2725C14.5611 12.9208 13.1097 14.1794 11.338 14.5703L11.2582 14.588L11.2596 14.6697L11.3197 18.1137L11.3214 18.2136L11.4214 18.2119L14.7543 18.1537C15.3126 18.144 15.7731 18.5887 15.7829 19.147C15.7926 19.7054 15.3479 20.1659 14.7895 20.1756L5.90201 20.3308C5.34368 20.3405 4.88316 19.8958 4.87341 19.3375C4.86366 18.7791 5.30839 18.3186 5.86672 18.3089L9.19955 18.2507L9.29953 18.2489L9.29779 18.149L9.23767 14.705L9.23624 14.6233L9.15582 14.6084C7.37159 14.2795 5.87712 13.0724 5.1613 11.4481L5.13798 11.3952L5.08051 11.389C2.37895 11.0977 0.245483 8.86459 0.196943 6.08373L0.177551 4.97278C0.157184 3.80597 1.0956 2.83421 2.26241 2.81385L4.4843 2.77506L4.58428 2.77332L4.58254 2.67333C4.56208 1.50144 5.4955 0.534853 6.6674 0.514397L13.333 0.398048C14.505 0.377592 15.4715 1.31101 15.492 2.48291ZM2.2977 4.83576L2.19772 4.83751L2.19947 4.93749L2.21886 6.04843C2.24484 7.53721 3.22872 8.77844 4.56301 9.23537L4.69788 9.28155L4.69539 9.13902L4.62132 4.89522L4.61957 4.79523L4.51959 4.79698L2.2977 4.83576ZM6.70269 2.53631L6.6027 2.53806L6.60445 2.63804L6.7208 9.30369C6.75376 11.192 8.32526 12.7095 10.2135 12.6766C12.1018 12.6436 13.6194 11.0721 13.5864 9.18385L13.4701 2.5182L13.4683 2.41822L13.3683 2.41996L6.70269 2.53631ZM15.6048 8.94859L15.6073 9.09113L15.7405 9.04026C17.058 8.53705 17.998 7.26224 17.972 5.77346L17.9526 4.66252L17.9509 4.56253L17.8509 4.56428L15.629 4.60306L15.529 4.60481L15.5308 4.70479L15.6048 8.94859Z" fill="#0ED2F6" stroke="#2E333A" stroke-width="0.2"/>
+                            </svg> 983</span>~1 SLP/win</h4>
+                            <h4 class="average-head">Manager: <span class="columns-head-2">10 SLP</span><span class="columns-sub-head">~0.18 USD</span> (100%)</h4>
+                          </div>
+                          <div class="column-4">
+                            <h4 class="columns-sub-head"><span class="columns-head">40 SLP</span>~0.40 USD</h4>
+                            <h4 class="average-head">Adventure SLP:<span class="columns-head-2"> 0/50</span></h4>
+                          </div>
+                          <div class="column-5">
+                            <h4 class="columns-sub-head"><span class="columns-head">34 SLP</span>~0.61 USD</h4>
+                            <h4 class="average-head">Total: <span class="columns-head-2">20 SLP</span><span class="columns-sub-head">~0.71 USD</span></h4>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="home-section-wrapper">
-                      <div class="home-section">
-                        <div class="column-1">
-                          <div class="column-head-wrapper">
-                            <div class="icon-wrapper">
-
-                              <svg class="icon" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.94579 3.46289H2.98795C2.46072 3.46289 1.95507 3.67234 1.58226 4.04515C1.20944 4.41796 1 4.92361 1 5.45084V19.3665C1 19.8938 1.20944 20.3994 1.58226 20.7722C1.95507 21.145 2.46072 21.3545 2.98795 21.3545H16.9036C17.4309 21.3545 17.9365 21.145 18.3093 20.7722C18.6821 20.3994 18.8916 19.8938 18.8916 19.3665V12.4087" stroke="#B2C2CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M17.4006 1.97207C17.7961 1.57664 18.3324 1.35449 18.8916 1.35449C19.4508 1.35449 19.9871 1.57664 20.3826 1.97207C20.778 2.3675 21.0001 2.90382 21.0001 3.46304C21.0001 4.02226 20.778 4.55857 20.3826 4.954L10.9398 14.3968L6.96387 15.3908L7.95784 11.4149L17.4006 1.97207Z" stroke="#B2C2CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              </svg>
+                      <div class="home-section-wrapper" id="bottom">
+                        <div class="home-section">
+                          <div class="column-1">
+                            <div class="column-head-wrapper">
+                              <div class="icon-wrapper">
+  
+                                <svg class="icon" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M9.94579 3.46289H2.98795C2.46072 3.46289 1.95507 3.67234 1.58226 4.04515C1.20944 4.41796 1 4.92361 1 5.45084V19.3665C1 19.8938 1.20944 20.3994 1.58226 20.7722C1.95507 21.145 2.46072 21.3545 2.98795 21.3545H16.9036C17.4309 21.3545 17.9365 21.145 18.3093 20.7722C18.6821 20.3994 18.8916 19.8938 18.8916 19.3665V12.4087" stroke="#B2C2CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M17.4006 1.97207C17.7961 1.57664 18.3324 1.35449 18.8916 1.35449C19.4508 1.35449 19.9871 1.57664 20.3826 1.97207C20.778 2.3675 21.0001 2.90382 21.0001 3.46304C21.0001 4.02226 20.778 4.55857 20.3826 4.954L10.9398 14.3968L6.96387 15.3908L7.95784 11.4149L17.4006 1.97207Z" stroke="#B2C2CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                              </div>
+                                <h4 class="column-head">Delvin</h4>
                             </div>
-                              <h4 class="column-head">Delvin</h4>
+                            <p class="column-pass">Axies: <span>3</span></p>
                           </div>
-                          <p class="column-pass">Axies: <span>3</span></p>
-                        </div>
-                        <div class="column-2">
-                          <h4 class="columns-sub-head"><span class="columns-head" > 10 SLP</span>~2.00 USD</h4>
-                          <h4 class="average-head">Average: <span class="columns-head-2">20 SLP</span> <span class="columns-sub-head">~0.500 USD</span> </h4>
-                          <h4 class="yesterday">Yesterday:<span class="yesterday-slp"> 5 SLP</span> <span class="yesterday-usd">~0.100 USD</span</h4>
-                        </div>
-                        <div class="column-3">
-                          <h4 class="columns-sub-head"><span class="columns-head"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.492 2.48291L15.4937 2.58289L15.5937 2.58115L17.8156 2.54237C18.9824 2.522 19.9542 3.46041 19.9745 4.62723L19.9939 5.73817C20.0425 8.51904 17.9882 10.8252 15.2985 11.2106L15.2413 11.2188L15.2198 11.2725C14.5611 12.9208 13.1097 14.1794 11.338 14.5703L11.2582 14.588L11.2596 14.6697L11.3197 18.1137L11.3214 18.2136L11.4214 18.2119L14.7543 18.1537C15.3126 18.144 15.7731 18.5887 15.7829 19.147C15.7926 19.7054 15.3479 20.1659 14.7895 20.1756L5.90201 20.3308C5.34368 20.3405 4.88316 19.8958 4.87341 19.3375C4.86366 18.7791 5.30839 18.3186 5.86672 18.3089L9.19955 18.2507L9.29953 18.2489L9.29779 18.149L9.23767 14.705L9.23624 14.6233L9.15582 14.6084C7.37159 14.2795 5.87712 13.0724 5.1613 11.4481L5.13798 11.3952L5.08051 11.389C2.37895 11.0977 0.245483 8.86459 0.196943 6.08373L0.177551 4.97278C0.157184 3.80597 1.0956 2.83421 2.26241 2.81385L4.4843 2.77506L4.58428 2.77332L4.58254 2.67333C4.56208 1.50144 5.4955 0.534853 6.6674 0.514397L13.333 0.398048C14.505 0.377592 15.4715 1.31101 15.492 2.48291ZM2.2977 4.83576L2.19772 4.83751L2.19947 4.93749L2.21886 6.04843C2.24484 7.53721 3.22872 8.77844 4.56301 9.23537L4.69788 9.28155L4.69539 9.13902L4.62132 4.89522L4.61957 4.79523L4.51959 4.79698L2.2977 4.83576ZM6.70269 2.53631L6.6027 2.53806L6.60445 2.63804L6.7208 9.30369C6.75376 11.192 8.32526 12.7095 10.2135 12.6766C12.1018 12.6436 13.6194 11.0721 13.5864 9.18385L13.4701 2.5182L13.4683 2.41822L13.3683 2.41996L6.70269 2.53631ZM15.6048 8.94859L15.6073 9.09113L15.7405 9.04026C17.058 8.53705 17.998 7.26224 17.972 5.77346L17.9526 4.66252L17.9509 4.56253L17.8509 4.56428L15.629 4.60306L15.529 4.60481L15.5308 4.70479L15.6048 8.94859Z" fill="#0ED2F6" stroke="#2E333A" stroke-width="0.2"/>
-                          </svg> 983</span>~1 SLP/win</h4>
-                          <h4 class="average-head">Manager: <span class="columns-head-2">10 SLP</span><span class="columns-sub-head">~0.18 USD</span> (100%)</h4>
-                        </div>
-                        <div class="column-4">
-                          <h4 class="columns-sub-head"><span class="columns-head">40 SLP</span>~0.40 USD</h4>
-                          <h4 class="average-head">Adventure SLP:<span class="columns-head-2"> 0/50</span></h4>
-                        </div>
-                        <div class="column-5">
-                          <h4 class="columns-sub-head"><span class="columns-head">34 SLP</span>~0.61 USD</h4>
-                          <h4 class="average-head">Total: <span class="columns-head-2">20 SLP</span><span class="columns-sub-head">~0.71 USD</span></h4>
+                          <div class="column-2">
+                            <h4 class="columns-sub-head"><span class="columns-head" > 10 SLP</span>~2.00 USD</h4>
+                            <h4 class="average-head">Average: <span class="columns-head-2">20 SLP</span> <span class="columns-sub-head">~0.500 USD</span> </h4>
+                            <h4 class="yesterday">Yesterday:<span class="yesterday-slp"> 5 SLP</span> <span class="yesterday-usd">~0.100 USD</span</h4>
+                          </div>
+                          <div class="column-3">
+                            <h4 class="columns-sub-head"><span class="columns-head"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M15.492 2.48291L15.4937 2.58289L15.5937 2.58115L17.8156 2.54237C18.9824 2.522 19.9542 3.46041 19.9745 4.62723L19.9939 5.73817C20.0425 8.51904 17.9882 10.8252 15.2985 11.2106L15.2413 11.2188L15.2198 11.2725C14.5611 12.9208 13.1097 14.1794 11.338 14.5703L11.2582 14.588L11.2596 14.6697L11.3197 18.1137L11.3214 18.2136L11.4214 18.2119L14.7543 18.1537C15.3126 18.144 15.7731 18.5887 15.7829 19.147C15.7926 19.7054 15.3479 20.1659 14.7895 20.1756L5.90201 20.3308C5.34368 20.3405 4.88316 19.8958 4.87341 19.3375C4.86366 18.7791 5.30839 18.3186 5.86672 18.3089L9.19955 18.2507L9.29953 18.2489L9.29779 18.149L9.23767 14.705L9.23624 14.6233L9.15582 14.6084C7.37159 14.2795 5.87712 13.0724 5.1613 11.4481L5.13798 11.3952L5.08051 11.389C2.37895 11.0977 0.245483 8.86459 0.196943 6.08373L0.177551 4.97278C0.157184 3.80597 1.0956 2.83421 2.26241 2.81385L4.4843 2.77506L4.58428 2.77332L4.58254 2.67333C4.56208 1.50144 5.4955 0.534853 6.6674 0.514397L13.333 0.398048C14.505 0.377592 15.4715 1.31101 15.492 2.48291ZM2.2977 4.83576L2.19772 4.83751L2.19947 4.93749L2.21886 6.04843C2.24484 7.53721 3.22872 8.77844 4.56301 9.23537L4.69788 9.28155L4.69539 9.13902L4.62132 4.89522L4.61957 4.79523L4.51959 4.79698L2.2977 4.83576ZM6.70269 2.53631L6.6027 2.53806L6.60445 2.63804L6.7208 9.30369C6.75376 11.192 8.32526 12.7095 10.2135 12.6766C12.1018 12.6436 13.6194 11.0721 13.5864 9.18385L13.4701 2.5182L13.4683 2.41822L13.3683 2.41996L6.70269 2.53631ZM15.6048 8.94859L15.6073 9.09113L15.7405 9.04026C17.058 8.53705 17.998 7.26224 17.972 5.77346L17.9526 4.66252L17.9509 4.56253L17.8509 4.56428L15.629 4.60306L15.529 4.60481L15.5308 4.70479L15.6048 8.94859Z" fill="#0ED2F6" stroke="#2E333A" stroke-width="0.2"/>
+                            </svg> 983</span>~1 SLP/win</h4>
+                            <h4 class="average-head">Manager: <span class="columns-head-2">10 SLP</span><span class="columns-sub-head">~0.18 USD</span> (100%)</h4>
+                          </div>
+                          <div class="column-4">
+                            <h4 class="columns-sub-head"><span class="columns-head">40 SLP</span>~0.40 USD</h4>
+                            <h4 class="average-head">Adventure SLP:<span class="columns-head-2"> 0/50</span></h4>
+                          </div>
+                          <div class="column-5">
+                            <h4 class="columns-sub-head"><span class="columns-head">34 SLP</span>~0.61 USD</h4>
+                            <h4 class="average-head">Total: <span class="columns-head-2">20 SLP</span><span class="columns-sub-head">~0.71 USD</span></h4>
+                          </div>
                         </div>
                       </div>
                     </div>

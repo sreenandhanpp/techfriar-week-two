@@ -32,12 +32,29 @@ document.addEventListener('DOMContentLoaded', function() {
   
 });
 
-// select tag action
 
-document.addEventListener('DOMContentLoaded', function() {
+
+//view all action
+
+
+function viewAll(){
+    const a = document.getElementById('view-all');
+    const display = document.getElementById('display');
+    const acitvity = document.getElementById('activities');
+    if(display.style.display == 'none'){
+        a.innerHTML = 'Collapse';
+        display.style.display = 'block'
+        acitvity.style.height = '800px'
+    }else{
+        a.innerHTML = 'view-all';
+        display.style.display = 'none'
+        acitvity.style.height = '300px'
+    }
+}
+
 
     
-    var element = document.getElementById( "role" );
-    element.setAttribute('display','none')
+    
+    
   
-});
+
